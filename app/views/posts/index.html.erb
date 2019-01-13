@@ -8,8 +8,10 @@ $(function () {
     // get the id from the data attribute
     var id = $(this).data("id");
     $.get("/posts/" + id + "/body", function(data) {
-      $("#body-" + id).text(data);
+        alert(data);
     });
   });
 });
 </script>
+
+<!-- $("#body-" + id).text(data); -->
