@@ -1,11 +1,11 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update]
 
- def body 
+ def body
    post = Post.find(params[:id])
-   render plain: post.description 
-  end 
-  
+   render plain: post.description
+  end
+
   def index
     @posts = Post.all
   end
